@@ -23,7 +23,7 @@ defmodule DemoWeb.Router do
 
   scope "/rijan_budds", DemoWeb do
     get "/friends/new", FriendController, :new
-    post "/friends", FriendController, :create
+    post "/friends/new", FriendController, :create
     get "/friends", RijanBuddsController, :friends  
     get "/photos", RijanBuddsController, :photos
     get "/likes", RijanBuddsController, :likes
